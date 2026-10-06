@@ -1,12 +1,1 @@
-const menuBtn = document.getElementById('menuBtn');
-const navLinks = document.getElementById('navLinks');
-
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
+const b=document.getElementById('menu'),l=document.getElementById('links');b.onclick=()=>l.style.display=l.style.display==='flex'?'none':'flex';document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>l.style.display='none');document.getElementById('year').textContent=new Date().getFullYear();
